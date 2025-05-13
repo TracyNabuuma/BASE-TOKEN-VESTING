@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans bg-white dark:bg-base-navy text-gray-900 dark:text-white transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply btn bg-base-blue hover:bg-base-blue-dark text-white focus:ring-base-blue-light;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-white dark:bg-base-navy-light border border-gray-200 dark:border-base-navy-light text-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-opacity-80 focus:ring-gray-300 dark:focus:ring-base-navy-light;
+  }
+  
+  .btn-outline {
+    @apply btn border border-base-blue text-base-blue dark:text-white hover:bg-base-blue hover:text-white dark:hover:bg-base-blue focus:ring-base-blue-light;
+  }
+  
+  .glass-card {
+    @apply rounded-xl bg-white/90 dark:bg-base-navy-light/90 backdrop-blur-sm border border-gray-100 dark:border-base-navy-light shadow-glass;
+  }
+  
+  .input {
+    @apply rounded-lg border border-gray-200 dark:border-base-navy-light bg-white dark:bg-base-navy-light px-4 py-2 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-base-blue-light transition-all duration-200;
+  }
+}
