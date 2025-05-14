@@ -5,6 +5,7 @@ import { VestingProgress } from './VestingProgress';
 import { ClaimCard } from './ClaimCard';
 import { TransactionHistory } from './TransactionHistory';
 import { Loader2 } from 'lucide-react';
+import TokenVestingABI from '../contracts/Tokenvestingabi.json';
 
 export const ConnectedDashboard: React.FC = () => {
   const { 

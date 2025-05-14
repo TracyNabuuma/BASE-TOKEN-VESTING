@@ -1,6 +1,7 @@
 import React from 'react';
 import { Landmark, ChevronRight } from 'lucide-react';
 import { useWeb3 } from '../contexts/Web3Context';
+import baselogo from '../assets/BASE.png';
 
 export const WelcomeCard: React.FC = () => {
   const { connectWallet, isConnecting } = useWeb3();
@@ -8,8 +9,9 @@ export const WelcomeCard: React.FC = () => {
   return (
     <div className="glass-card p-8 my-8 mx-auto max-w-2xl">
       <div className="flex flex-col items-center text-center">
-        <div className="w-16 h-16 bg-base-blue rounded-full flex items-center justify-center mb-6">
-          <Landmark className="w-8 h-8 text-white" />
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6">
+          {/* <Landmark className="w-8 h-8 text-white" /> */}
+          <img src={baselogo} alt="Base logo" />
         </div>
         
         <h1 className="text-2xl md:text-3xl font-bold mb-4">Base Token Vesting Dashboard</h1>
