@@ -6,6 +6,7 @@ import { Footer } from './components/Footer';
 import { WelcomeCard } from './components/WelcomeCard';
 import { ConnectedDashboard } from './components/ConnectedDashboard';
 import { useWeb3 } from './contexts/Web3Context';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 const Dashboard = () => {
   const { isConnected, isCorrectNetwork } = useWeb3();

@@ -1,12 +1,17 @@
 import React from 'react';
+import {ethers, parseEther} from 'ethers';
 import { useTheme } from '../contexts/ThemeContext';
 import { WalletConnect } from './WalletConnect';
 import { ThemeToggle } from './ThemeToggle';
-import { Landmark } from 'lucide-react';
+import { Landmark, Receipt } from 'lucide-react';
 import baselogo from '../assets/BASE.png';
+
+
 
 export const Header: React.FC = () => {
   const { isDarkMode } = useTheme();
+
+      
   
   return (
     <header className="sticky top-0 z-10 backdrop-blur-sm bg-white/90 dark:bg-base-navy/90 border-b border-gray-100 dark:border-base-navy-light transition-colors duration-200">

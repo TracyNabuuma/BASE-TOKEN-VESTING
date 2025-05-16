@@ -1,6 +1,6 @@
 // Network Configuration
 export const BASE_CHAIN_ID = 8453;
-export const BASE_TESTNET_CHAIN_ID = 84531;
+export const BASE_TESTNET_CHAIN_ID = 84532;
 
 export const NETWORKS = {
   [BASE_CHAIN_ID]: {
