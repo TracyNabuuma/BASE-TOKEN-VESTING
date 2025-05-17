@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
           {/* <Landmark className="w-8 h-8 text-base-blue" /> */}
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">Base Vesting</h1>
         </div>
-        
+        <div><button style={{color:'white'}} className='text-xl font-bold mb-4 bg-blue-700 p-[7px] p-x-3 rounded-md' >Start Vesting</button></div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <WalletConnect />
